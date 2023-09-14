@@ -4,29 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chessboard</title>
+    <style>
+        table {
+            margin: auto;
+        }
+        tbody{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 2;
+            align-items: center;
+        }
+        tbody tr td {
+            padding: 30px;
+        }
+        tr:nth-child(odd) td:nth-child(odd),
+        tr:nth-child(even) td:nth-child(even) {
+            background-color: rgb(204, 204, 204);
+            color: rgb(0, 0, 0);
+        }
+
+        tr:nth-child(odd) td:nth-child(even),
+        tr:nth-child(even) td:nth-child(odd) {
+            background-color: rgb(58, 58, 58);
+            color: rgb(255, 255, 255);
+        }
+    </style>
 </head>
 <body>
     <table>
         <tbody>
             <tr>
-                <td>Torre</td>
-                <td>Cavalo</td>
-                <td>Bispo</td>
-                <td>Rei</td>
-                <td>Rainha</td>
-                <td>Bispo</td>
-                <td>Cavalo</td>
-                <td>Torre</td>
+                <td>TO</td>
+                <td>CA</td>
+                <td>BI</td>
+                <td>RE</td>
+                <td>RA</td>
+                <td>BI</td>
+                <td>CA</td>
+                <td>TO</td>
             </tr>
             <tr>
-                <td>Peao</td>
-                <td>Peao</td>
-                <td>Peao</td>
-                <td>Peao</td>
-                <td>Peao</td>
-                <td>Peao</td>
-                <td>Peao</td>
-                <td>Peao</td>
+                <td>PE</td>
+                <td>PE</td>
+                <td>PE</td>
+                <td>PE</td>
+                <td>PE</td>
+                <td>PE</td>
+                <td>PE</td>
+                <td>PE</td>
             </tr>
             <tr>
                 <td>A6</td>
@@ -69,24 +95,24 @@
                 <td>H3</td>
             </tr>
             <tr>
-                <td>Peao</td>
-                <td>Peao</td>
-                <td>Peao</td>
-                <td>Peao</td>
-                <td>Peao</td>
-                <td>Peao</td>
-                <td>Peao</td>
-                <td>Peao</td>
+                <td>PE</td>
+                <td>PE</td>
+                <td>PE</td>
+                <td>PE</td>
+                <td>PE</td>
+                <td>PE</td>
+                <td>PE</td>
+                <td>PE</td>
             </tr>
             <tr>
-                <td>Torre</td>
-                <td>Cavalo</td>
-                <td>Bispo</td>
-                <td>Rainha</td>
-                <td>Rei</td>
-                <td>Bispo</td>
-                <td>Cavalo</td>
-                <td>Torre</td>
+                <td>TO</td>
+                <td>CA</td>
+                <td>BI</td>
+                <td>RE</td>
+                <td>RA</td>
+                <td>BI</td>
+                <td>CA</td>
+                <td>TO</td>
             </tr>
         </tbody>
     </table>
